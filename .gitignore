@@ -37,3 +37,6 @@ next-env.d.ts
 
 .idea
 .fleet
+
+src/types/takeshape.ts
+schema.graphql
