@@ -36,7 +36,12 @@ const GetProjectQuery = gql`
 
   fragment ProjectFragment on Project {
     _id
-    description
+    title
+    head
+    subhead
+    location
+    year
+    description(format: html)
     featuredImage {
       ...ProjectImage
     }
@@ -48,7 +53,6 @@ const GetProjectQuery = gql`
       _id
       name
     }
-    title
   }
 
   query GetProjectQuery($slug: String!) {
